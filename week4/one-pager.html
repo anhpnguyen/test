@@ -10,49 +10,24 @@ body {
   max-width: 600px;
   background: white;
 }
-div {
-  height: 200px;
-  background-size: cover;
-  margin: 40px 0 0 0;
-  border-radius: 12px;
-}
-h1 {
-  font-family: 'Londrina Shadow', cursive;
+h1{
   text-align: center;
-  font-size: 75px;
-  color: #aaaaaa;
-  margin: 60px 0 0 0;
 }
-h2 {
+h2{
   text-align: center;
-  color: #bbbbbb;
-  margin: 0px 0 70px 0;
 }
-small{
-  opacity: 0;
-}
-p {
-  color: rgba(255,255,255,1);
-  background: black;
-  height: 30px;
-  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-  padding: 10px;
+p{
   line-height: 28px;
-  transition: height .5s;
-  -webkit-transition: height .5s;
-  -moz-transition: height .5s;
+  text-align: justify;
 }
+div{
+  border-radius: 12px;
+  position: relative;
 
-.first{
-  background-image: url("assets/images/charles-business-owner.jpg");
 }
-.second{
-  background-image: url("assets/images/david-usaa.jpg");
-}
-.dessert{
-  background-image: url("assets/images/thomas-humana.jpg");
+.pitch{
+  background: gray;
+  padding: 10px;
 }
 @media(max-width : 500px){
   h1{
@@ -93,6 +68,7 @@ p {
 <h3>PERSONAS</h3>
 <div class="first">
   <p>Business Owner: Charles M. Chin</span><br />
+  <img src="assets/images/charles-business-owner.jpg">
   <small>Short description:
 Charles run his own business where he provides cleaning services to house and bigger facilities. He had a website that was built in 2000 and looks outdated. He would like to find someone who can redesign his website for a reasonable price.
 
@@ -104,6 +80,7 @@ Anh-portfolio is Anh’s personal website that was built as one of his side proj
 
 <div class="second">
   <p>Technical Director at Humana: David B. Osborne<br />
+  <img src="assets/images/david-usaa.jpg">
   <small>Short description:
 David Horton is a technical director at Humana for more than 5 years and he’s looking for IT interns for next summer who can demonstrate their passion in software and database development.
 Long description: 
@@ -114,6 +91,7 @@ Anh-portfolio is Anh Nguyen’s personal website who is a Junior student at Mich
   
 <div class="dessert">
   <p>USAA Recruiter: Thomas S. Duffield<br />
+  <img src="assets/images/thomas-humana.jpg">
   <small>Short description:
 Thomas is a technical recruiter at USAA looking for web development interns to fill the web development team who can demonstrate his web development skills through a personal portfolio and  have some backgrounds in software development.
 
@@ -128,3 +106,9 @@ Anh-portfolio is a website that belongs to Anh Nguyen, who is a junior Computer 
 <p>http://cassidoo.co/</p>
 <p>http://www.caitlinamcdonald.com/</p>
 </div>
+</body>
+<script>
+ $('div').on('click', function(){
+   $(this).toggleClass('show-description');
+ });
+</script>
