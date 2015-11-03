@@ -1,0 +1,48 @@
+header{
+  width: 100%;
+  text-align: center;
+  color: white;
+  height: 150px;
+  padding: 50px 0px;
+  background-color: #009bc7;
+}
+.column{
+  font-weight: 100;
+  padding: 30px;
+  width: 50%;
+  font-size: 14px;
+  color: #7d7d7d;
+  margin: 0 auto;
+}
+@media (min-width: 400px) and (max-width: 799px){
+  .column{
+    width: 100%;
+    padding: 30px;
+  }
+}
+@media (min-width: 800px) and (max-width: 1199px){
+  .column{
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+    -webkit-column-rule: 1px solid lightblue; /* Chrome, Safari, Opera */
+    -moz-column-rule: 1px solid lightblue; /* Firefox */
+    column-rule: 1px solid lightblue;
+  }
+}
+@media (min-width: 1200px){
+  .column{
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+    -webkit-column-rule: 1px solid lightblue; /* Chrome, Safari, Opera */
+    -moz-column-rule: 1px solid lightblue; /* Firefox */
+    column-rule: 1px solid lightblue;
+  }
+}
