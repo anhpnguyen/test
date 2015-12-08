@@ -39,7 +39,7 @@ h1 {
   padding-top: 9px;
 }
 h2 {
-  padding-top: 15px;
+  padding-top: 10px;
 }
 nav {
   width: 100%;
@@ -63,7 +63,7 @@ nav div {
   padding: 5px;
 }
 a:hover {
-  color: #ffffff;
+  color: #ff1a1a;
 }
 .section {
   width: 100%;
@@ -83,10 +83,16 @@ a:hover {
 .section a:hover{
   text-decoration: none;
 }
-progress {
-    position:fixed;
-    top:15px;
-    background-color: blue;
+.progressbar {
+    position:absolute;
+    top: 20px;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 5px;
+    background: #1a53ff none repeat scroll 0% 0%;
+    z-index: 99999;
+    cursor: pointer;
 }
 /*
 #contact {

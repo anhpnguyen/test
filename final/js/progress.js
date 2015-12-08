@@ -1,11 +1,11 @@
-//Progress bar
-$(window).scroll(function () {
-  var s = $(window).scrollTop(),
-        d = $(document).height(),
-        c = $(window).height();
-        scrollPercent = (s / (d-c)) * 100;
-        var position = scrollPercent;
+$(document).ready(function() {
+  var docHeight = $(document).height(),
+  windowHeight = $(window).height(),
+  scrollPercent;
 
-   $("#progressbar").attr('value', position);
+  $(window).scroll(function() {
+    scrollPercent = $(window).scrollTop() / (docHeight - windowHeight) * 100;
 
-});
+    $('.progressbar').width(scrollPercent + '%');
+    });
+    });
