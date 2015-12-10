@@ -1,0 +1,12 @@
+WIREFRAME.CC
+  - Simple and very easy to get started wireframing tool.
+  - Provides different features to assure wireframing as comprehensive and meaningful as possible.
+  - Drag and drop method makes it quick and efficient for user to use.
+  - Ability to annotate. 
+  - Has smart suggestions.
+
+Pencil Project
+  - Firefox plugin
+  - Provides many options to customize an element
+  - Provides toolbox
+  - More complicated user interface
